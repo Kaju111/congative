@@ -213,7 +213,7 @@ const Home = () => {
               onClick={barSubmit}
               className="bg-gray-900 mt-3 flex  text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
             >
-              Submit
+              Submite
             </button>
           </div>
         </div>

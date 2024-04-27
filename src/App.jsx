@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "./components/Login";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
-import Forget from "./components/Forgot";
+import { Route, Routes } from "react-router-dom";
+import Forgot from "./components/Forgot";
 import Otp from "./components/Otp";
 import Home from "./components/Home";
 import Emplye from "./components/Emplye";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/forgot" element={<Forget />} />
+      <Route path="/forgot" element={<Forgot />} />
       <Route path="/otp" element={<Otp />} />
       <Route path="/home" element={<Home />} />
       <Route path="/emplye" element={<Emplye />} />
