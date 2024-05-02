@@ -16,7 +16,7 @@ const Login = () => {
       "and password:",
       password
     );
-    navigate("/home");
+    navigate("/asdm");
   };
 
   return (

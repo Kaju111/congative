@@ -20,10 +20,10 @@ const Home = () => {
 
   const generateBarcode = () => {
     const data = {
-      qualification: document.getElementById("name").value,
-      percentage: document.getElementById("number").value,
-      collegeName: document.getElementById("phone").value,
-      passYear: document.getElementById("date").value,
+      name: document.getElementById("name").value,
+      fathername: document.getElementById("fathername").value,
+      dob: document.getElementById("dob").value,
+      address: document.getElementById("address").value,
       highQualification: document.getElementById("service").value,
       message: document.getElementById("message").value,
     };
@@ -79,7 +79,7 @@ const Home = () => {
       {!qFormVisible && (
         <div className="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase">
-            Add Your Qualification
+            New registration from
           </div>
           <form className="py-4 px-6" action="" method="POST">
             <div className="mb-4">
@@ -87,44 +87,29 @@ const Home = () => {
                 htmlFor="name"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Qualification
+                Full name
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="name"
                 type="text"
-                name="qualification"
-                placeholder="Enter your qualification"
+                name="name"
+                placeholder="Enter your full name..."
               />
             </div>
             <div className="mb-4">
               <label
-                htmlFor="email"
+                htmlFor="name"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Percentage
+                Father name
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="number"
-                type="number"
-                name="percentage"
-                placeholder="Enter your percentage"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="phone"
-                className="block text-gray-700 font-bold mb-2"
-              >
-                College Name
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="phone"
-                type="tel"
-                name="collegeName"
-                placeholder="Enter your college name"
+                id="fathername"
+                type="name"
+                name="fathername"
+                placeholder="Enter your full name..."
               />
             </div>
             <div className="mb-4">
@@ -132,14 +117,29 @@ const Home = () => {
                 htmlFor="date"
                 className="block text-gray-700 font-bold mb-2"
               >
-                Pass year
+                DOB
               </label>
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="date"
+                id="dob"
                 type="date"
-                name="passYear"
+                name="dob"
                 placeholder="Select a date"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-gray-700 font-bold mb-2"
+              >
+                Address
+              </label>
+              <input
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="address"
+                type="tel"
+                name="address"
+                placeholder="Enter your address..."
               />
             </div>
 
@@ -190,7 +190,7 @@ const Home = () => {
         </div>
       )}
       {barcodeData && (
-        <div className="mt-10 max-w-md mx-auto border border-gray-400 mb-3 overflow-auto p-7 rounded-md">
+        <div className="mt-10 max-w-lg mx-auto border border-gray-400 mb-3 overflow-auto p-7 rounded-md">
           <h2 className="text-lg font-bold mb-2">Qualification Slip</h2>
           <p className="mb-4 text-gray-700">
             Your qualification: {JSON.stringify(barcodeData)}

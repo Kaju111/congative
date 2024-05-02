@@ -9,6 +9,7 @@ import Profile from "./components/Profile";
 import Contect from "./components/Contect";
 import Hire from "./components/Hire";
 import Slip from "./components/Slip";
+import Asdm from "./components/Asdm";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/contect" element={<Contect />} />
       <Route path="/hire" element={<Hire />} />
+      <Route path="/asdm" element={<Asdm />} />
       <Route
         path="/slip"
         element={
