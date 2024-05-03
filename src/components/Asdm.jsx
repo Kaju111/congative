@@ -2,7 +2,7 @@ import React from "react";
 
 const Asdm = () => {
   return (
-    <div>
+    <div className="h-[470px]">
       <div className="flex flex-col w-80 m-auto mt-14 rounded-lg shadow-lg justify-center items-center border border-gray-500 h-60">
         <h1 className="text-xl">Are you train from ASDM </h1>
         <div className="flex flex-row gap-4 mt-6">

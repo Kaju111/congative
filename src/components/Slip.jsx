@@ -2,7 +2,7 @@ import React from "react";
 
 const Slip = ({ applicantName, jobTitle, companyName, startDate }) => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <div className="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="text-2xl py-4 px-6 bg-gray-900 text-white text-center font-bold uppercase">
           Job Acceptance Slip

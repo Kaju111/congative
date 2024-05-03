@@ -10,31 +10,37 @@ import Contect from "./components/Contect";
 import Hire from "./components/Hire";
 import Slip from "./components/Slip";
 import Asdm from "./components/Asdm";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/forgot" element={<Forgot />} />
-      <Route path="/otp" element={<Otp />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/emplye" element={<Emplye />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/contect" element={<Contect />} />
-      <Route path="/hire" element={<Hire />} />
-      <Route path="/asdm" element={<Asdm />} />
-      <Route
-        path="/slip"
-        element={
-          <Slip
-            applicantName="John Doe"
-            jobTitle="Software Engineer"
-            companyName="ABC Inc."
-            startDate="2024-05-01"
-          />
-        }
-      />
-    </Routes>
+    <div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/forgot" element={<Forgot />} />
+        <Route path="/otp" element={<Otp />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/emplye" element={<Emplye />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/contect" element={<Contect />} />
+        <Route path="/hire" element={<Hire />} />
+        <Route path="/asdm" element={<Asdm />} />
+        <Route
+          path="/slip"
+          element={
+            <Slip
+              applicantName="John Doe"
+              jobTitle="Software Engineer"
+              companyName="ABC Inc."
+              startDate="2024-05-01"
+            />
+          }
+        />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
 

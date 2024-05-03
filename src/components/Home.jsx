@@ -32,7 +32,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 h-screen">
       <form
         className={`max-w-md mx-auto mt-5 ${qFormVisible ? "" : "hidden"}`}
         onSubmit={handleSubmit}
