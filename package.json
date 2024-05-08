@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.19.3",
+    "google-maps": "^4.3.3",
     "react": "^18.2.0",
     "react-barcode": "^1.5.1",
     "react-dom": "^18.2.0",
